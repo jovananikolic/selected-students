@@ -1,0 +1,20 @@
+.selected{
+  background: blue;
+  color: white;
+}
+
+.students{
+  list-style-type: none;
+  width: 200px;
+  border: 2px solid black;
+}
+
+.students li{
+  cursor: pointer;
+  transition: 1.5s ease;
+  font-family: serif;
+}
+
+.students li:hover{
+  background-color: red;
+}
