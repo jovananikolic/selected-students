@@ -9,13 +9,18 @@ import { STUDENTS } from '../mock-students';
 })
 export class StudentsComponent implements OnInit {
 
-  students = STUDENTS;
+  allStudents = STUDENTS;
+  selectedStudent: Student;
 
   student: Student = {
     id: 1,
     name: 'Petar Petrovic'
   };
   //student = 'Petar Petrovic';
+
+  onSelectedStudent(student){
+      this.selectedStudent = student;
+  }
 
   constructor() { }
 
