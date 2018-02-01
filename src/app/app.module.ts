@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { StudentsComponent } from './students/students.component';
 import { StudentDetailComponent } from './student-detail/student-detail.component';
+import { MockServiceService } from './mock-service.service';
 
 
 @NgModule({
@@ -18,7 +19,7 @@ import { StudentDetailComponent } from './student-detail/student-detail.componen
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [MockServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
