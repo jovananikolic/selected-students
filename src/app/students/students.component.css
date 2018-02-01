@@ -6,13 +6,15 @@
 .students{
   list-style-type: none;
   width: 200px;
-  border: 2px solid black;
+  border: 2px solid blue;
+  border-radius: 10px;
 }
 
 .students li{
   cursor: pointer;
   transition: 1.5s ease;
   font-family: serif;
+  padding: 5px;
 }
 
 .students li:hover{
